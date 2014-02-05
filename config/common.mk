@@ -145,8 +145,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     CMUpdater \
-    CMFota \
-    CMAccount
+    CMFota 
+
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -218,7 +218,7 @@ endif
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
-PRODUCT_VERSION_MAJOR = 11
+PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
@@ -289,7 +289,7 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
+  ro.xpe.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://XPerience-NXT.github.io
 
