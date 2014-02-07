@@ -16,3 +16,8 @@ XPE-8.0-RC0
 * RAM VAR
 * SpeedNET view
 
+7/feb/2014
+* add CPU info overlay [2/2]
+* Added XPerience Platlogo
+* Lockscreen blur
+

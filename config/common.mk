@@ -92,7 +92,7 @@ PRODUCT_COPY_FILES += \
     vendor/XPerience/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/XPerience/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/XPerience/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/XPerience/prebuilt/common/etc/install-recovery:system/etc/install-recovery
+    vendor/XPerience/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
 
 # userinit support
 PRODUCT_COPY_FILES += \
