@@ -13,8 +13,12 @@ TARGET_BOOTANIMATION_SIZE := $(shell \
   fi )
 
 # get a sorted list of the sizes
-bootanimation_sizes := $(subst .zip,, $(shell ls vendor/XPerience/prebuilt/common/bootanimation))
-bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_sizes)) | sort -rn)
+#bootanimation_sizes := $(subst .zip,, $(shell ls vendor/XPerience/prebuilt/common/bootanimation))
+#bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_sizes)) | sort -rn)
+
+# bootanimation
+PRODUCT_COPY_FILES += \
+	vendor/XPerience/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # find the appropriate size and set
 define check_and_set_bootanimation
@@ -264,7 +268,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL-Alpha
+    CM_BUILDTYPE := Alpha
     CM_EXTRAVERSION :=
 endif
 

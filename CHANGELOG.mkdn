@@ -21,3 +21,9 @@ XPE-8.0-RC0
 * Added XPerience Platlogo
 * Lockscreen blur
 
+12/02/14
+* add option to force high-end graphics on low memory devices 
+* [1/2] Left handed navbar during landscape mode
+* Bring back Camera widget option for tablets
+* binder: update MemoryHeapIon
+* 
