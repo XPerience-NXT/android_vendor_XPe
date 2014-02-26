@@ -27,3 +27,12 @@ XPE-8.0-RC0
 * Bring back Camera widget option for tablets
 * binder: update MemoryHeapIon
 * 
+
+25/02/2014
+
+* Updated to android 4.4.2_r2
+* White UI
+* Fixed FC in Settings 
+* Fixed some issues
+* Base: [1/2] ElectroBeam: Add an alternative screen-off animation
+* Settings: [2/2] ElectroBeam: Add an alternative screen-off animation
