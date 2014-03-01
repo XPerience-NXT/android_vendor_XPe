@@ -95,6 +95,7 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/XPerience/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/XPerience/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/XPerience/prebuilt/common/etc/init.d/01klozz:system/etc/init.d/01klozz \
     vendor/XPerience/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/XPerience/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
 
@@ -207,6 +208,11 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
+# Screen Recorder
+PRODUCT_PACKAGES += \
+    ScreenRecorder \
+    libscreenrecorder
+
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
     vendor/XPerience/proprietary/Term.apk:system/app/Term.apk \
@@ -268,7 +274,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL-BETA-02
+    CM_BUILDTYPE := UNOFFICIAL-BETA-03
     CM_EXTRAVERSION :=
 endif
 

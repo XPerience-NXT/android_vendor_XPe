@@ -36,3 +36,8 @@ XPE-8.0-RC0
 * Fixed some issues
 * Base: [1/2] ElectroBeam: Add an alternative screen-off animation
 * Settings: [2/2] ElectroBeam: Add an alternative screen-off animation
+
+01/03/2014
+
+* Fixed issue when ScreenRecorder
+* XPerience kernel updated to v17
