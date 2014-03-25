@@ -41,3 +41,10 @@ XPE-8.0-RC0
 
 * Fixed issue when ScreenRecorder
 * XPerience kernel updated to v17
+
+20/03/2014
+
+* Internal fixes and changes. 
+* Reordened settings
+* New wallpaper :P
+
