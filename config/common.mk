@@ -80,7 +80,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/XPerience/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    vendor/XPerience/CHANGELOG.mkdn:system/etc/CHANGELOG-xpe.txt
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -94,10 +94,14 @@ endif
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/XPerience/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/XPerience/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/XPerience/prebuilt/common/etc/init.d/01klozz:system/etc/init.d/01klozz \
     vendor/XPerience/prebuilt/common/bin/sysinit:system/bin/sysinit \
     vendor/XPerience/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
+
+#Adblock
+PRODUCT_COPY_FILES += \
+    vendor/XPerience/prebuilt/common/etc/hosts:system/etc/hosts
+
 
 # userinit support
 PRODUCT_COPY_FILES += \
@@ -273,7 +277,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL-BETA-03
+    CM_BUILDTYPE := UNOFFICIAL-BETA-04
     CM_EXTRAVERSION :=
 endif
 

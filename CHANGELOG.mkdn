@@ -3,7 +3,6 @@ XPERIENCE
 
 Changelog:
 
-
 XPE-8.0-RC0
 * Based on Android 4.4.2 (Google)
 * Cyanogenmod 11.0 (CM)
@@ -48,3 +47,11 @@ XPE-8.0-RC0
 * Reordened settings
 * New wallpaper :P
 
+27/03/2014
+
+* Added XPerience Stats :) all info are anonymous n_n you can check it on github
+* added hardware info on settings
+* Added multi-window
+* Screen recorder optimizations :D
+* Suport to SEMC (SOMC Sony Mobile) apps ;)
+* Added XPerience 17 kernel with propper ramdisk.
