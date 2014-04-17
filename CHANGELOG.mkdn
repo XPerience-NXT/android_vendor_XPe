@@ -38,7 +38,7 @@ XPE-8.0-RC0
 
 01/03/2014
 
-* Fixed issue when ScreenRecorder
+* Fixed issue when ScreenRecorder is enabled.
 * XPerience kernel updated to v17
 
 20/03/2014
@@ -55,3 +55,18 @@ XPE-8.0-RC0
 * Screen recorder optimizations :D
 * Suport to SEMC (SOMC Sony Mobile) apps ;)
 * Added XPerience 17 kernel with propper ramdisk.
+
+16/04/2014
+
+* New Theme engine from CM
+* Fixed some memory leaks
+* Updated Source to latest from AOSP
+* Updated some parts to MR5 from CM
+* Removed some duplicated options
+* Fixed some FC's on ScreenRecorder
+* Fixes on Shell(aka Bug report)
+* Fixes on Kernel Ramdisk to avoid Fc's like phone Fc and others :)
+* Implemented Changelog in device info setting
+* Reimplemented XPerienceStats.
+* Implemented XPerience Setup Wizzard (Based on CMAccount).
+* Reordened Settings :D

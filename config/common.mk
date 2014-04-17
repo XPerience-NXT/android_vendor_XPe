@@ -80,7 +80,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/XPerience/CHANGELOG.mkdn:system/etc/CHANGELOG-xpe.txt
+    vendor/XPerience/CHANGELOG.mkdn:system/etc/CHANGELOG-XPE.txt
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -151,14 +151,15 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
-    Apollo \
     CMFileManager \
     LockClock \
     CMFota 
 
 # XPerience PAckages
 PRODUCT_PACKAGES += \
-    XPeNotePad
+    XPerienceMusic \
+    XPeNotePad \
+    XPerienceSetupWizard
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -237,7 +238,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
 PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-MR1
+PRODUCT_VERSION_MAINTENANCE = 0-MR5
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -251,7 +252,7 @@ endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=
+    CM_BUILDTYPE := 
 endif
 
 ifdef CM_BUILDTYPE
@@ -277,7 +278,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL-BETA-04
+    CM_BUILDTYPE := UNOFFICIAL
     CM_EXTRAVERSION :=
 endif
 
