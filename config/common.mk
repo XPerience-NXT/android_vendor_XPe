@@ -157,7 +157,6 @@ PRODUCT_PACKAGES += \
 
 # XPerience PAckages
 PRODUCT_PACKAGES += \
-    XPerienceMusic \
     XPeNotePad \
     XPerienceSetupWizard
 

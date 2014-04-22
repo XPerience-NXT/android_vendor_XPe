@@ -70,3 +70,16 @@ XPE-8.0-RC0
 * Reimplemented XPerienceStats.
 * Implemented XPerience Setup Wizzard (Based on CMAccount).
 * Reordened Settings :D
+
+22/04/14
+
+* Fixes for assets of new theme engine
+* Rom now support custom bootanimation,sounds wallpapper from themes like CM11 new themes.
+* Fixed memory leaks
+* Add entry to change lock wallpaper via themes 
+* Download: add to support pause/resume download by manual
+* Style previews [3/3]
+* Parallel shutdown 
+* Trebuchet: Fix capitalization of some strings
+* CM11 Themes: Store hash codes for target and overlay in idmap 
+* adb: Do not look for bu in /system/bin when in recovery mode 
