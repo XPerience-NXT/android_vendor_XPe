@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
+    Apollo \
     Launcher3 \
     Trebuchet \
     DSPManager \
@@ -157,8 +158,8 @@ PRODUCT_PACKAGES += \
 
 # XPerience PAckages
 PRODUCT_PACKAGES += \
-    XPeNotePad \
-    XPerienceSetupWizard
+    XPeNotePad 
+#XPerienceSetupWizard
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -237,7 +238,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
 PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-MR5
+PRODUCT_VERSION_MAINTENANCE = 0-MR6
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -306,7 +307,7 @@ else
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.xpe.version=$(CM_VERSION) \
+  ro.xpe.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://XPerience-NXT.github.io
 
@@ -337,7 +338,10 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.display.version=$(CM_DISPLAY_VERSION)
+  ro.cm.display.version=$(CM_DISPLAY_VERSION) \
+  ro.xpe.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
+  ro.modversion=$(CM_VERSION) \
+  ro.cmlegal.url=http://XPerience-NXT.github.io
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
