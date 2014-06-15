@@ -203,6 +203,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
@@ -238,7 +245,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
 PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-MR6
+PRODUCT_VERSION_MAINTENANCE = 0-MR7
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 

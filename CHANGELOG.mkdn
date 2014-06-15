@@ -93,3 +93,16 @@ XPE-8.0-RC0
 * FFMPEG codecs
 * Telephony updates now have support to multi-sim devices :D
 * Bring support to Falcon device.
+
+14/06/2014
+* Common: Theme Chooser UI Overhaul
+* Common: Calculator app redesign (courtesy Xlythe)
+* Common: Performance Profiles
+* Common: Improved theming performance on low memory devices (~512MB RAM or less)
+* Trebuchet: Move settings to new slide-out panel
+* Trebuchet: Consolidate settings for home and drawer options
+* Media: Add FFMPEG support (expanded media format support)
+* Bluetooth: Improved support for new car audio systems and docks
+* Various small bugfixes, global and device-specific
+* HOVER from PA
+
