@@ -153,12 +153,14 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     CMWallpapers \
     CMFileManager \
-    LockClock \
-    CMFota 
+    LockClock 
 
 # XPerience PAckages
 PRODUCT_PACKAGES += \
-    XPeNotePad 
+    XPeNotePad  \
+    CMFota \
+    CMAccount \
+    CMHome
 #XPerienceSetupWizard
 
 # CM Hardware Abstraction Framework
@@ -245,7 +247,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
 PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-MR7
+PRODUCT_VERSION_MAINTENANCE = 6-MR7
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
