@@ -247,7 +247,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/XPerience/overlay/common
 
 PRODUCT_VERSION_MAJOR = 8
 PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 6-MR7
+PRODUCT_VERSION_MAINTENANCE = 7-MR8
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
 
@@ -351,6 +351,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.xpe.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://XPerience-NXT.github.io
+
+# disable multithreaded dextop for RELEASE and SNAPSHOT builds
+ifneq ($(filter RELEASE SNAPSHOT,$(CM_BUILDTYPE)),)
+PRODUCT_PROPERTY_OVERRIDES += \
+  persist.sys.dalvik.multithread=false
+endif
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
