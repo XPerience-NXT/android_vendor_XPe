@@ -93,7 +93,7 @@ endif
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
+    vendor/XPerience/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
