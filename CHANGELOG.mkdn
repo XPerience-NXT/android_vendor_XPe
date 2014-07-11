@@ -95,9 +95,8 @@ XPE-8.0-RC0
 * Telephony updates now have support to multi-sim devices :D
 * Bring support to Falcon device.
 
-### 11.0.0 M8
+XPerience-8.0.7 M8
 * Common: Android 4.4.4 (Google)
-* New Devices: Sony Xperia Z2 (sirius); Xiaomi Mi2 (aries); Oppo Find 7a/s (find7); OnePlus One (bacon)
 * Common: Fix VPN issues related to 4.4.3 merge
 * Common: Enable 'Heads Up' notification mode (Settings > Notifications)
 * Settings: 'Interface' replaced by 'Status Bar', 'Notification Drawer', and 'Gestures'
@@ -119,5 +118,6 @@ XPE-8.0-RC0
 * Media: Add FFMPEG support (expanded media format support)
 * Bluetooth: Improved support for new car audio systems and docks
 * Various small bugfixes, global and device-specific
-* HOVER from PA
-
+* Peek fixes
+* some maximum improvements and fixed memory leaks
+* Fixed some Graphical glitches on low end devices and some MSM devices.

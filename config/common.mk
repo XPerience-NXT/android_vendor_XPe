@@ -354,6 +354,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.display.version=$(CM_DISPLAY_VERSION) \
   ro.xpe.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
+  ro.build.status=$(CM_BUILDTYPE) \
   ro.modversion=$(CM_VERSION) \
   ro.cmlegal.url=http://XPerience-NXT.github.io
 
