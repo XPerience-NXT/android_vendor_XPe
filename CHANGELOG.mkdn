@@ -1,4 +1,3 @@
-
 XPERIENCE 
 =========
 
@@ -94,30 +93,39 @@ XPE-8.0-RC0
 * FFMPEG codecs
 * Telephony updates now have support to multi-sim devices :D
 * Bring support to Falcon device.
-
-XPerience-8.0.7 M8
-* Common: Android 4.4.4 (Google)
-* Common: Fix VPN issues related to 4.4.3 merge
-* Common: Enable 'Heads Up' notification mode (Settings > Notifications)
-* Settings: 'Interface' replaced by 'Status Bar', 'Notification Drawer', and 'Gestures'
-* Settings: Moved 'Expanded Desktop' to 'Display'
-* Settings: Moved all lock screen related items to 'Lock Screen' and removed duplicates from 'Security'
-* Settings: Moved 'Navigation Bar' layout control to 'Buttons'
-* Trebuchet: Custom Homescreen grid size
-* Trebuchet: Add Protected Apps feature
-* Trebuchet: Add Search Panel (Google Now) option
-* WhisperPush: No longer ignores 'Blacklist'
-* Futex: Protect against Towelroot
-* Various small bugfixes, global and device-specific
-* Common: Theme Chooser UI Overhaul
-* Common: Calculator app redesign (courtesy Xlythe)
-* Common: Performance Profiles
-* Common: Improved theming performance on low memory devices (~512MB RAM or less)
-* Trebuchet: Move settings to new slide-out panel
-* Trebuchet: Consolidate settings for home and drawer options
-* Media: Add FFMPEG support (expanded media format support)
-* Bluetooth: Improved support for new car audio systems and docks
-* Various small bugfixes, global and device-specific
 * Peek fixes
 * some maximum improvements and fixed memory leaks
 * Fixed some Graphical glitches on low end devices and some MSM devices.
+
+### 8.0.0 M9
+* Common: Android 4.4.4 (Google)
+* Theme Engine: Themes support for additional UI elements
+* Lockscreen: Allow doubletap to sleep when using secure keyguard
+* Settings: Safe Headset Volume – prompt when interfering with 3rd party device (Jawbone, Square, etc)
+* Settings: Center clock support
+* Settings: Proximity Wake-Up support
+* Settings: Spam notification filtering
+* Settings Search: Additional improvements and highlighting
+* Data Usage Info: Add support for CDMA devices without sim cards
+* Bluetooth: Add additional A2DP profiles
+* Bluetooth: Disable AVRCP 1.5 by default (fixes various car unit compatibility)
+* Email: Fix saving attachments to storage for POP3 accounts
+* Account for Play Services induced wake-locks
+* Fix encryption on some LG Devices
+* Dialer: add support for Korean and Chinese to smart-dialer
+
+### 8.0.0 M10
+* Common: Android 4.4.4 (Google)
+* Drop support for obake, toro, toroplus
+* Theme Engine: Themes support for additional UI elements
+* Frameworks & Core Apps: CAF and other upstream updates
+* Settings: Add scramble pin feature
+* Frameworks: Long press recent apps to switch to last used app
+* Settings: Add soft reboot option
+* Add smart cover support
+* Add glove mode support
+* Add bug reporter and crash log uploader
+* Multisim updates
+* General bug fixes
+* ANT+ Support for various hardware
+* Privacy Guard: Control NFC permissions

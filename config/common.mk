@@ -40,14 +40,6 @@ PRODUCT_BOOTANIMATION := vendor/XPerience/prebuilt/common/bootanimation/$(TARGET
 endif
 endif
 
-ifdef CM_NIGHTLY
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=klozz
-else
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.rommanager.developerid=klozz
-endif
-
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -191,6 +183,9 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
     ntfsfix \
     ntfs-3g \
     gdbserver \
@@ -365,3 +360,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 -include vendor/cyngn/product.mk
+
+$(call inherit-product-if-exists, vendor/extra/product.mk)
